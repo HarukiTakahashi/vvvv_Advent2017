@@ -1,5 +1,5 @@
-# vvvv_STLReader
-.stl file reader for vvvv
+# vvvv Advent Calendar 2017用パッチ
+[vvvv Advent Calendar 2017](https://qiita.com/advent-calendar/2017/vvvv)
 
 ValueSTLReaderというフォルダがプラグインになります。
 これを各々のContributionsのフォルダに入れていただくか、プロジェクトの中においてcsprojを読み込んでいただけると機能します。
