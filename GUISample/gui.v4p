@@ -1,0 +1,85 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv50beta35.dtd" >
+   <PATCH nodename="C:\Users\Darrell\Documents\GitHub\vvvv_STLReader\GUISample\gui.v4p" systemname="gui" filename="C:\Users\Darrell\Documents\GitHub\vvvv_STLReader\gui.v4p">
+   <BOUNDS type="Window" left="10590" top="960" width="4275" height="3225">
+   </BOUNDS>
+   <PACK Name="addonpack" Version="35.0.0">
+   </PACK>
+   <NODE systemname="GuiSample (GUI)" filename="plugins\GUIGuiSample\GUIGuiSample.csproj" nodename="GuiSample (GUI)" componentmode="InAWindow" id="1">
+   <BOUNDS type="Node" left="450" top="390" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Window" left="4650" top="960" width="6000" height="3240">
+   </BOUNDS>
+   <PIN pinname="Button" visible="1">
+   </PIN>
+   <PIN pinname="Check Box" visible="1">
+   </PIN>
+   <PIN pinname="Text Box" visible="1">
+   </PIN>
+   <PIN pinname="Slider" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="3">
+   <BOUNDS type="Box" left="855" top="945" width="480" height="480">
+   </BOUNDS>
+   <BOUNDS type="Node" left="855" top="945" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Toggle">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Check Box" dstnodeid="3" dstpinname="Y Input Value">
+   </LINK>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="4">
+   <BOUNDS type="Box" left="1515" top="945" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="1515" top="945" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Text Box" dstnodeid="4" dstpinname="Input String">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="5">
+   <BOUNDS type="Box" left="2775" top="1020" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="2775" top="1020" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Slider" dstnodeid="5" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="6">
+   <BOUNDS type="Node" left="150" top="915" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="150" top="915" width="480" height="480">
+   </BOUNDS>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="Y Input Value" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="1" srcpinname="Button" dstnodeid="6" dstpinname="Y Input Value">
+   </LINK>
+   <NODE systemname="GUIGuiSampleNode.cs (Editor)" filename="plugins\GUIGuiSample\GUIGuiSampleNode.cs" nodename="GUIGuiSampleNode.cs (Editor)" componentmode="Hidden" id="9">
+   <BOUNDS type="Node" left="960" top="1950" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="960" top="1950" width="6000" height="4500">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11565" top="3165" width="12240" height="14835">
+   </BOUNDS>
+   </NODE>
+   </PATCH>
